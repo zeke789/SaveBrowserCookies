@@ -1,2 +1,2 @@
 # SaveBrowserCookies
-Chrome extension that saves facebook cookies to reuse them later
+Extensión para Chrome que guarda las cookies de Facebook para luego pdoer ser reutilizadas
