@@ -8,13 +8,7 @@
   ], 
   "host_permissions": [
     "<all_urls>"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["https://www.facebook.com/*","https://facebook.com/*"], 
-      "js": ["scripts/content.js"]
-    }
-  ],
+  ], 
   "action": {
     "default_popup": "popup.html",
     "default_icon": "images/icon.png"
