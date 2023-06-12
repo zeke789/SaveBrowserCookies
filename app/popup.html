@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .invisible{display: none !important;}
+    #err1{ border:2px dotted rgb(181, 42, 42);color:#00FF2B; background-color: #e06969;padding:7px;width:90%}
+
+    #err2{ border:2px dotted rgb(181, 42, 42); background-color: #e06969; display:inline-block;margin:15px 0 35px 10px;max-height:110px; }
+    #err2 > h4{ background:#333333;color:#00FF2B;padding:5px; font-size:17px }
+
+    body{
+      width:700px;background:greenyellow;
+      height:500px;padding:1px;
+    }
+    body>div{
+      background-color: #333333;color:greenyellow;padding:5px;
+      font-family:'Courier New', Courier, monospace;min-height: 100%;height: auto;
+    }
+    #cookies{padding:10px; padding-right:10px;}
+    details{ border:1px solid greenyellow;margin-bottom:15px;padding:5px; }
+    #title { display: flex;align-items: center;}
+    #title h1 {  margin-right: 10px; }
+    #btn2{ margin-left: 35px}
+    #btn3{ margin-left: 15px}
+    .delBtn {background-color: #ff5c5c;color: white;border: none;padding: 6px 14px;border-radius: 4px;font-size: 14px;cursor: pointer; }
+    .btns2 { background-color: #138bc8; color: white; border: none; padding: 6px 14px; border-radius: 4px; font-size: 14px; cursor: pointer; }
+    .delBtn:hover { background-color: #e60000; }
+    .delBtn:focus { outline: none; box-shadow: 0 0 0 2px #ff5c5c; }
+    .btns2:hover { background-color: #1349c8; }
+    .btns2:focus { outline: none; box-shadow: 0 0 0 2px #0808eb; }
+    .btnsDelete,.btns1{ margin: 0 0 0 15px;  }
+    .btns1{ margin: 0 0 0 50px;
+      display: inline-block;
+    border: 1px solid blue;
+    padding: 4px;
+    text-align: center;cursor:pointer;
+    }
+    .btns1 img{ display: block;margin: 0 auto;width:34px  }
+    .btnsDelete img{ display: block;margin: 0 auto;width:22px }
+    .btnsDelete{    display: inline-block;
+    border: 1px solid red;
+    padding: 4px;
+    text-align: center;cursor:pointer;margin:0 }
+
+    #contBtns3{ display:inline-block }
+  </style>
+</head>
+<body>
+  
+  <div id="unlockDiv">
+    <div style="display:block">
+      <input type="text" name="pass" id="pass">
+      <input type="submit" value="desbloquear" id="unlock">
+    </div> 
+    <div class="invisible" id="err2">
+      <h4 id="h4err2"></h4>
+    </div>
+  </div>
+
+  
+
+  <div class="invisible" id="mainCont">
+    <div id="title">
+      <h1> FB</h1>
+      <img src="images/cooks.png" style="width:70px">
+
+      <button id="btn2" class="delBtn">BORRAR DATOS</button> 
+      <button id="btn3" class="delBtn">BORRAR COOKIES FB</button> 
+
+    </div>
+
+    <h4 class="invisible" id="err1"></h4>
+    
+    <button id="btn1" class="btns2" style="display:inline-block">GUARDAR COOKIE </button> 
+    <h4 style="display:inline-block" id="user2"></h4>
+
+
+    <div id="cookies" flex="1">
+    
+    </div>
+  </div>
+  <script src="scripts/popup.js"></script>
+</body>
+</html>
